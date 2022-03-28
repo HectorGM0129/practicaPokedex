@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.pokedex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50rem;
+  height: 39rem;
+  margin: 2rem;
+}
+
+.pokedex__tapa {
+  background-color: red;
+  border: black solid 1px;
+}
+
+.pokedex__tapa__redonda {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.pokedex__tapa__izq {
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+.flexbox__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexbox__container__imgpokemon {
+  flex: 1;
+  width: 70%;
+  background-color: white;
+  margin-top: 1.2rem;
+}
+
+.flexbox__container__imgpokemon__botones {
+  flex: 2;
+}
+.botones {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.botones__cruz {
+  display: grid;
+  grid-template-columns: 3rem 3rem 3rem;
+  grid-template-rows: 2rem 2rem 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2em;
+  margin-right: 2rem;
+}
+
+.boton {
+  background-color: black;
+}
+.boton__cruz_arriba {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.boton__cruz_abajo {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.boton__cruz_izquierda {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.boton__cruz_derecha {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
