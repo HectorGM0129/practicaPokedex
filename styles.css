@@ -23,6 +23,8 @@ html {
 .pokedex__tapa__redonda {
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .pokedex__tapa__izq {
@@ -54,7 +56,7 @@ html {
   grid-template-columns: 3rem 3rem 3rem;
   grid-template-rows: 2rem 2rem 2rem;
   margin-top: 4rem;
-  margin-bottom: 2em;
+
   margin-right: 2rem;
 }
 
@@ -76,4 +78,37 @@ html {
 .boton__cruz_derecha {
   grid-column: 3/4;
   grid-row: 2/3;
+}
+
+input[type="text"] {
+  margin-top: 4rem;
+  margin-left: 1rem;
+  width: 12.5rem;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.pokedex_tapa__stats {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+
+.pokedex_tapa__stats h3 {
+  color: white;
+  margin-top: 0;
+}
+
+.pokedex_tapa__stats h3 span {
+  background-color: green;
+}
+
+.name {
+  color: white;
+  margin: 1.4rem;
 }

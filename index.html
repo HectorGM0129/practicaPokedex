@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
-    <script src="./scripts.js"></script>
+
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./normalize.css" />
   </head>
@@ -13,21 +13,46 @@
     <main class="pokedex">
       <div class="pokedex__tapa pokedex__tapa__izq flexbox__container">
         <img
-          id="pokemonimg"
+          id="pokeImg"
           class="flexbox__container__imgpokemon"
           src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
         />
         <div class="flexbox__container__imgpokemon__botones botones">
-          <div></div>
+          <h3 class="name">Nombre: <span id="nombrePoke">Ivysaur</span></h2>
+          <h3 class="name">Numero: <span id="numberPoke">2</span></h2>
+          <div>
+            <input
+              placeholder="Nombre o número"
+              type="text"
+              id="pokeName"
+              value="1"
+            />
+          </div>
           <div class="botones__cruz">
-            <button class="boton boton__cruz_arriba"></button>
-            <button class="boton boton__cruz_abajo"></button>
-            <button class="boton boton__cruz_izquierda"></button>
-            <button class="boton boton__cruz_derecha"></button>
+            <button id="arriba" class="boton boton__cruz_arriba"></button>
+            <button id="abajo" class="boton boton__cruz_abajo"></button>
+            <button id="izquierda" class="boton boton__cruz_izquierda"></button>
+            <button id="derecha" class="boton boton__cruz_derecha"></button>
           </div>
         </div>
       </div>
-      <div class="pokedex__tapa pokedex__tapa__redonda"></div>
+      <div class="pokedex__tapa pokedex__tapa__redonda">
+        <div class="pokedex_tapa__stats">
+          <h3>
+            Tipo: <span id="tipo1">Planta</span> <span id="tipo2">Planta</span>
+          </h3>
+          <h3>Altura: <span id="altura">Planta</span></h3>
+          <h3>Peso: <span id="peso">Planta</span></h3>
+          <h3><b>Stats</b></h3>
+          <h3>Ataque <span id="atk">120</span></h3>
+          <h3>Ataque especial <span id="atkSp">130</span></h3>
+          <h3>Defensa especial <span id="defSp">40</span></h3>
+          <h3>Defensa <span id="def">20</span></h3>
+          <h3>Salud: <span id="hp">20</span></h3>
+          <h3>Velocidad: <span id="sp">20</span></h3>
+        </div>
+      </div>
     </main>
+    <script src="./scripts.js"></script>
   </body>
 </html>
